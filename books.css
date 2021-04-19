@@ -1,0 +1,28 @@
+button {
+	border: none;
+	display: block;
+	background-color: white;
+	font-size: 17px;
+	padding: 5px 10px;
+}
+
+button:hover {
+	border: none;
+	border-radius: 5px;
+	display: block;
+	background-color: lightgrey;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+#butonat {
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+input#searchbar {
+	margin: 10px;
+	margin-left: 22px;
+	padding: 5px;
+	width: 300px;
+}
