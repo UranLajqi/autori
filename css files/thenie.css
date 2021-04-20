@@ -1,0 +1,14 @@
+section {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+}
+section pre {
+	float: left;
+	padding-right: 60px;
+}
+section img {
+	float: left;
+	width: 600px;
+	height: auto;
+}
