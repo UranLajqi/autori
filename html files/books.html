@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Books</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css files/index.css">
+  <link rel="stylesheet" type="text/css" href="../css files/books.css">
+  <script type="text/javascript" src="../javascript files/books.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html" class="logo">Rexhep Qosja</a>
+  <div class="header-right">
+    <a href="index.html">Kryefaqja</a>
+    <a href="intervistat.html">Intervistat</a>
+    <a class="active" href="books.html">Librat</a>
+    <a href="biografia.html">Biografia</a>
+    <a href="thenie.html">Shkrime</a>
+  </div>
+</div>
+
+<aside id="pjesa">
+  <pre><br><br>
+        "Është thënë: çka do të bëhet në bodrume, 
+        do të dëgjohet në pullaze; çka do të fshihet 
+        në male, do të dalë nëpër fusha; çka do të 
+        bëhet mbas shpine do të dalë para syve" !
+  </pre>
+
+<section>
+  <h2>Vepra</h2><br>
+  <p>
+    Është autor i mbi tridhjetë librave me studime për letërsinë dhe kritikë letrare, prozë artistike, tregime, romane dhe drama, publicistikë e shkrime polemike. Ka botuar recensione, vështrime, artikuj, sprova, trajtesa e studime në revista shkencore e letrare, duke trajtuar në to çështje të veçanta të letërsisë shqipe dhe të krijimtarisë letrare në përgjithësi. Disa punime dhe vepra të tij janë përkthyer në gjuhë të tjera.
+  </p>
+  <p>
+    Në vitin 2010 Instituti Albanologjik i Prishtinës botoi kompletin e veprave në 29 vëllime.
+  </p><br>
+  <hr><br>
+  <h2>Prozë</h2><br>
+  <p>Rexhep Qosja ka botuar disa romane: "Vdekja më vjen prej syve të tillë" (1974), "Një dashuri dhe shtatë faje" (2003), "Nata është dita jonë" (2007), "Bijtë e askujt" (2010) dhe Të fshehtat e treguara (2020).
+  </p>
+  <p>Përveç në Prishtinë romani "Vdekja më vjen prej syve të tillë" është botuar në vitin 1987 edhe në Tiranë, me inisiativë të shkrimtarit Ismail Kadare, i cili kishte lexuar botimin e Shtëpisë Botuese “Rilindja” të Prishtinës dhe e kishte pëlqyer. Më vonë Kadare e rekomandoi romanin e Qosjes edhe në Francë dhe ai u botua atje,[7][8] në vitin 1994 me parathënie të Kadaresë.[9]</p>
+  <p>Qosja ashtu si shkrimtarët tjerë shqiptarë është ndikuar nga Ismail Kadare. Një rast i tillë është romani i Qosjes Një dashuri dhe shtatë faje i botuar më 2001, që është i ngjashëm me romanin e Kadaresë Krushqit janë të ngrirë botuar më 1986. Ngjashmëritë janë protagonisti i cili është mjek në të dy rastet, antagonisti që është UDB, vendi është Spitali i Prishtinës, viti është 1981, faji i protagonistit është mjekimi ose nderimi i viktimave të demonstratës. Studiuesi Ag Apolloni pohon se ngjashmëri të tilla ka edhe te shkrimtarët e mëdhenj botërorë dhe ato nuk ua ulin vlerën veprave.[10]
+  </p>
+  <p>Nga proza Qosja ka botuar edhe tregimin "I ringjalluri i penduar" i cili mund të quhet edhe novelë ose roman. Ky tregim është satirë që fshikullon politikanët kosovarë të pasluftës.[11] Të fshehtat e treguara është romani i parë omnibus në letërsinë shqipe.[12]
+  </p>
+</section>
+</aside>
+
+<div id="butonat">
+  <input id="searchbar" onkeyup="search_book()" type="text" name="search" placeholder="Search books..">      
+  <ol id='list'>
+    <li class="librat"><button id="butoni1" onclick="shfaqPdf1()">Panteoni i rralluar</button></li>
+    <li class="librat"><button id="butoni2" onclick="shfaqPdf2()">Morfologjia e një fushate</button></li>
+    <li class="librat"><button id="butoni3" onclick="shfaqPdf3()">
+      Episode letrare</button> <span id="nukEshte3" style="color: red;"></span> 
+    </li>
+    <li class="librat"><button id="butoni4" onclick="shfaqPdf4()">
+      Dialog me shkrimtarë</button> <span id="nukEshte4" style="color: red;"></span> 
+    </li>
+
+    <li class="librat"><button id="butoni5" onclick="shfaqPdf5()">
+      Antologjia e lirikës shqipe</button> <span id="nukEshte5" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni6" onclick="shfaqPdf6()">
+      Kontinuitete</button> <span id="nukEshte6" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni7" onclick="shfaqPdf7()">
+      Asdreni - jeta dhe vepra</button> <span id="nukEshte7" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni8" onclick="shfaqPdf8()">
+      Vdekja më vjen prej syve të tillë</button> <span id="nukEshte8" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni9" onclick="shfaqPdf9()">
+      Shkrimtarë dhe periudha</button> <span id="nukEshte9" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni10" onclick="shfaqPdf10()">
+      Anatomia e kulturës</button> <span id="nukEshte10" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni11" onclick="shfaqPdf11()">
+      Mite të zhveshura</button> <span id="nukEshte11" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni12" onclick="shfaqPdf12()">
+      Prej tipologjisë deri te periodizimi</button> <span id="nukEshte12" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni13" onclick="shfaqPdf13()">
+      Morfologjia e një fushate</button> <span id="nukEshte13" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni14" onclick="shfaqPdf14()">
+      Nocione të reja albanologjike</button> <span id="nukEshte14" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni15" onclick="shfaqPdf15()">
+      Historia e letërsisë shqipe I, II</button> <span id="nukEshte15" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni16" onclick="shfaqPdf16()">
+      Antologjia historike e letërsisë shqipe</button> <span id="nukEshte16" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni17" onclick="shfaqPdf17()">
+      Historia e letërsisë shqipe III</button> <span id="nukEshte17" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni18" onclick="shfaqPdf18()">
+      Porosia e madhe</button> <span id="nukEshte18" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni19" onclick="shfaqPdf19()">
+      Populli i ndaluar</button> <span id="nukEshte19" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni20" onclick="shfaqPdf20()">
+      Strategjia e bashkimit kombëtar</button> <span id="nukEshte20" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni21" onclick="shfaqPdf21()">
+      Çështja shqiptare: historia dhe politika</button> <span id="nukEshte21" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni22" onclick="shfaqPdf22()">
+      Ligjërime paravajtëse</button> <span id="nukEshte22" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni23" onclick="shfaqPdf23()">
+      Fjalor demokratik</button> <span id="nukEshte23" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni24" onclick="shfaqPdf24()">
+      Paqja e përgjakshme: Konferenca ndërkombëtare për Kosovën</button> <span id="nukEshte24" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni25" onclick="shfaqPdf25()">
+      Një dashuri dhe shtatë faje</button> <span id="nukEshte25" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni26" onclick="shfaqPdf26()">
+      I ringjalluri i penduar</button> <span id="nukEshte26" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni27" onclick="shfaqPdf27()">
+      Ideologjia e shpërbërjes</button> <span id="nukEshte27" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni28" onclick="shfaqPdf28()">
+      Realiteti i shpërfillur</button> <span id="nukEshte28" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni29" onclick="shfaqPdf29()">
+      Rilindja e dytë</button> <span id="nukEshte29" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni30" onclick="shfaqPdf30()">
+      Prej letërsisë romantike deri te letërsia moderne</button> <span id="nukEshte30" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni31" onclick="shfaqPdf31()">
+      Nata është dita jonë</button> <span id="nukEshte31" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni32" onclick="shfaqPdf32()">
+      Shqipëria dhe Kosova - Si janë dhe si do të duhej të jenë</button> <span id="nukEshte32" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni33" onclick="shfaqPdf33()">
+      Dëshmitar në kohë historike 1966-1974 - Ditar I</button> <span id="nukEshte33" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni34" onclick="shfaqPdf34()">
+      Dëshmitar në kohë historike 1975-1978 - Ditar II</button> <span id="nukEshte34" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni35" onclick="shfaqPdf35()">
+      Dëshmitar në kohë historike 1979-1981 - Ditar III</button> <span id="nukEshte35" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni36" onclick="shfaqPdf36()">
+      Dëshmitar në kohë historike 1982-1983 - Ditar IV</button> <span id="nukEshte36" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni37" onclick="shfaqPdf37()">
+      Dëshmitar në kohë historike 1982-1983 - Ditar IV</button> <span id="nukEshte37" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni38" onclick="shfaqPdf38()">
+      Dëshmitar në kohë historike 1984-1985 - Ditar V</button> <span id="nukEshte38" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni39" onclick="shfaqPdf39()">
+      Dëshmitar në kohë historike 1986-1989 - Ditar VI</button> <span id="nukEshte39" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni40" onclick="shfaqPdf40()">
+      Dëshmitar në kohë historike 1990-1998 - Ditar VII</button> <span id="nukEshte40" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni41" onclick="shfaqPdf41()">Dëshmitar në kohë historike 1999-2001 - Ditar VIII</button> <span id="nukEshte41" style="color: red;"></span>
+    </li>
+    <li class="librat"><button id="butoni42" onclick="shfaqPdf42()">
+      Të fshehtat e treguara</button> <span id="nukEshte42" style="color: red;"></span>
+    </li>
+  </ol>
+</div>
+
+<div id="book1" style="display: none;">
+  <embed src="Rexhep QOSJA - Panteoni i rralluar.pdf#toolbar=0" type="application/pdf" width="100%" height="668px"></embed>
+</div>
+<div id="book2" style="display: none;">
+  <embed src="Rexhep QOSJA - Morfologjia e një fushate.pdf#toolbar=0" type="application/pdf" width="100%" height="668px"></embed>
+</div>
+
+</body>
+</html>
